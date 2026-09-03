@@ -1,0 +1,67 @@
+# General ignore rules for this project (alternative to .gitignore)
+
+# Build artifacts and CMake files
+/build/
+/bin/
+/lib/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/Testing/
+
+# Compiled object files and libraries
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.lai
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Generated executables (local targets)
+lazyparser
+lazyparser_generator
+test_grammar
+test_parser
+test_utils
+
+# IDE/editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.iml
+
+# Logs, temporary files
+*.log
+*.tmp
+*.temp
+*~
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage and test outputs
+coverage/
+*.gcno
+*.gcda
+*.lcov
+.nyc_output/
+
+# Python artifacts (examples/ or tools may contain Python)
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+
+# Misc
+tags
+cscope.*
